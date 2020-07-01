@@ -9,7 +9,7 @@ are available in the 0.13 major release of Terraform.
 Module expansion in Terraform encompasses using the `count` or `for_each` 
 keywords in a module call block:
 
-```hcl
+```terraform
 module "foo" {
     source = "./mymodule"
     count  = 2
@@ -26,7 +26,7 @@ of the graph between dependencies. However, there are cases where nothing in the
 configuration demonstrates the dependency between modules, and in this
 scenario, you can use `depends_on`:
 
-```hcl
+```terraform
 module "a" {
   source = "./a"
 }
@@ -44,7 +44,7 @@ This example in this repo is based of that of Roger Berlind's [excellent article
 Variable validation is no longer experimental as of 0.13! Validate variables, providing
 a condition and an error message, that are inputs to your module.
 
-```hcl
+```terraform
 variable "my_var" {
   type        = string
 
