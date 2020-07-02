@@ -1,7 +1,7 @@
-# Module Expansion and Variable Validation Demos
+# Terraform 0.13 Demos
 
 This repository includes small demos demonstrating module expansion
-(using module `for_each`) and variable validation, features that
+(using module `for_each`), `depends_on`, and variable validation, a few of the features that
 are available in the 0.13 major release of Terraform.
 
 ## Module Expansion
